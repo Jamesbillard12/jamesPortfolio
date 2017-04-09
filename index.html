@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link rel="stylesheet" href="js/vendor/CSS/livepreview-demo.css">
-  <link rel="stylesheet" href="css/icons.css">
   <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/base.css">
@@ -12,6 +11,40 @@
   <link rel="shortcut icon" href="assets/images/JamesBillard.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Billard in Code</title>
+
+  <script id="abouttemplate" type="text/x-handlebars-template">
+    <section class="pbox" data-category="{{acategory}}">
+      <section id="proheader" class="proheader">
+        <a href="{{url}}"><h1 class="protitle">{{name}}</h1></a>
+      </Section>
+      <section>
+        <div o class="wrap">
+          <iframe scrolling = "no" src="{{url}}" target="_top" class="frame"></iframe>
+        </div>
+        <h2>Description:</h2>
+        <a href = "{{url}}" class="description" target="_blank">{{description}}</a>
+        {{publishStatus}}
+      </section>
+    </section>
+
+  </script>
+
+  <script id="template" type="text/x-handlebars-template">
+    <section class="pbox" data-category="{{category}}">
+      <section id="proheader" class="proheader">
+        <a href="{{url}}"><h1 class="protitle">{{name}}</h1></a>
+      </Section>
+      <section>
+        <div o class="wrap">
+          <iframe scrolling = "no" src="{{url}}" target="_top" class="frame"></iframe>
+        </div>
+        <h2>Description:</h2>
+        <a href = "{{url}}" class="description" target="_blank">{{description}}</a>
+        {{publishStatus}}
+      </section>
+    </section>
+
+  </script>
 </head>
 <body>
   <section class="wrapper">
@@ -20,89 +53,97 @@
         <img src="assets/PNG/BillardinCode.png" id="titleimg">
         <h2 id="subtitle">A Nube's Adventure in Becoming a Programmer</h2>
       </section>
-      <nav class="main-nav">
-        <span class="icon-menu"></span>
-        <ul>
+      <nav class="main-nav"><i class="fa fa-bars icon-menu" aria-hidden="true"></i><ul>
 
-          <li class="navlink tab" data-content="myProjects"><span class="icon-home3 icons"></span><a href="#" class="navtext">My Projects</a></li>
+        <li class="navlink tab" data-content="aboutMe"><a href="#" class="navtext"><i class="fa fa-id-card icons" aria-hidden="true"></i>About Me</a></li>
 
-          <li class="navlink tab" data-content="aboutMe"><a href="#" class="navtext"><i class="fa fa-id-card icons" aria-hidden="true"></i>About Me</a></li>
+        <li class="navlink tab" data-content="myProjects"><a href="#" class="navtext"><i class="fa fa-home icons" aria-hidden="true"></i>My Projects</a></li>
 
-          <li class="navlink tab" data-content="myMusic"><a href="#" class="navtext"><i class="fa fa-music icons" aria-hidden="true"></i>My Music</a></li>
+        <li class="navlink tab" data-content="myMusic"><a href="#" class="navtext"><i class="fa fa-music icons" aria-hidden="true"></i>My Music</a></li>
 
-          <li class="navlink"><span class="icon-github icons"></span><a href="https://github.com/Jamesbillard12" target="_blank"  class="navtext">GitHub</a></li>
+        <li class="navlink"><span class=""></span><a href="https://github.com/Jamesbillard12" target="_blank"  class="navtext"><i class="fa fa-github icons" aria-hidden="true"></i>GitHub</a></li>
 
-          <li class="navlink"><a href="https://www.facebook.com/james.billard" target="_blank" class="navtext"><i class="fa fa-facebook-official icons" aria-hidden="true" ></i>Facebook</a></li>
+        <li class="navlink"><a href="https://www.facebook.com/james.billard" target="_blank" class="navtext"><i class="fa fa-facebook-official icons" aria-hidden="true" ></i>Facebook</a></li>
 
-          <li class="navlink"><a href="https://soundcloud.com/jamzboi" target="_blank" class="navtext"><i class="fa fa-soundcloud icons" aria-hidden="true"></i>SoundCloud</a></li>
+        <li class="navlink"><a href="https://soundcloud.com/jamzboi" target="_blank" class="navtext"><i class="fa fa-soundcloud icons" aria-hidden="true"></i>SoundCloud</a></li>
 
-          <li class="navlink"><a href="https://www.linkedin.com/in/james-billard-855751132/" target="_blank" class="navtext"><i class="fa fa-linkedin-square icons" aria-hidden="true"></i>Linkedin</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="mainflex">
-
-
-
-      <section id="myProjects" class="projects tab-content" >
-        <h1>My Projects:</h1>
-        <section id="projectstodom" class="projectstodom">
-          <section class="template" data-category="cat">
-            <section id="proheader" class="proheader">
-              <a href=""><h1 class="protitle"></h1></a>
-            </Section>
-            <section>
-              <div o class="wrap">
-                <iframe scrolling = "no" src="" target="_top" class="frame"></iframe>
-              </div>
-              <h2>Description:</h2>
-              <a href = "" class="description" target="_blank"></a>
-            </section>
-          </section>
-        </section>
-      </section>
-
-
-      <section id="myMusic" class="music tab-content">
-        <h1>My Music:</h1>
-        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/298320501&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-
-        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/288560812&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-
-        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/288560812&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-
-      </section>
-
-      <section class="about tab-content" id="aboutMe">
-        <h1>About:</h1>
-        <section class="sectionmain">
-
-          <img src="assets/images/JamesBillard.jpg">
-          <span class="sidebyside">
-            <p>My name is James Billard and I am originally from Newfoundland, Canada. I am currently studying to be a website programmer at Code Fellows vocational school in Seattle, Wa.</p>
-          </span>
-
-        </section>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <ul>
-        <li class="footul">James Billard</li>
-        <li class="footul">(206)852-3184</li>
-        <li class="footul"><a href="https://www.google.com/maps/place/1323+N+176th+St,+Shoreline,+WA+98133/@47.756177,-122.3440727,17z/data=!3m1!4b1!4m5!3m4!1s0x549010efd371da3b:0x1e596be9a26bb4a9!8m2!3d47.756177!4d-122.341884" class="footul" target="_blank" id="footul">1323 N 176th St. Shoreline, Wa.</a></li>
+        <li class="navlink"><a href="https://www.linkedin.com/in/james-billard-855751132/" target="_blank" class="navtext"><i class="fa fa-linkedin-square icons" aria-hidden="true"></i>Linkedin</a></li>
       </ul>
-    </footer>
+    </nav>
+  </header>
 
-  </section>
+  <main class="mainflex">
+
+    <section class="about tab-content" id="aboutMe">
+      <h1>About:</h1>
+      <section class="sectionmain">
+
+        <img src="assets/images/JamesBillard.jpg">
+        <span class="sidebyside">
+          <p>My name is James Billard and I am originally from Newfoundland, Canada. I am currently studying to be a website programmer at Code Fellows vocational school in Seattle, Wa.</p>
+        </span>
+
+        <section id="abouttodom">
+
+        </section>
+
+      </section>
+    </section>
 
 
-  <script src="js/vendor/scripts/jquery-3.2.0.js"></script>
-  <script src="js/vendor/scripts/jquery-live-preview.js" charset="utf-8"></script>
-  <script src="js/projectobjects.js" charset="utf-8"></script>
-  <script src="js/app.js" charset="utf-8"></script>
-  <script src="js/view.js" charset="utf-8"></script>
+
+    <section id="myProjects" class="projects tab-content" >
+      <ul id="filters">
+        <li>
+          <select id="category-filter">
+            <option value="">-- Filter by Categories --</option>
+          </select>
+        </li>
+      </ul>
+      <h1>My Projects:</h1>
+
+      <section id="projectstodom" class="projectstodom">
+
+      </section>
+
+
+    </section>
+
+
+    <section id="myMusic" class="music tab-content">
+      <h1>My Music:</h1>
+      <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/298320501&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+      <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/288560812&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+      <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/288560812&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+    <ul>
+      <li class="footul">James Billard</li>
+      <li class="footul">(206)852-3184</li>
+      <li class="footul"><a href="https://www.google.com/maps/place/1323+N+176th+St,+Shoreline,+WA+98133/@47.756177,-122.3440727,17z/data=!3m1!4b1!4m5!3m4!1s0x549010efd371da3b:0x1e596be9a26bb4a9!8m2!3d47.756177!4d-122.341884" class="footul" target="_blank" id="footul">1323 N 176th St. Shoreline, Wa.</a></li>
+    </ul>
+  </footer>
+
+</section>
+
+<script src="js/vendor/scripts/jquery-3.2.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+
+<script src="js/aboutObjects.js" charset="utf-8"></script>
+<script src="js/aboutApp.js" charset="utf-8"></script>
+<script src="js/aboutView.js" charset="utf-8"></script>
+
+
+<script src="js/projectobjects.js" charset="utf-8"></script>
+<script src="js/projectApp.js" charset="utf-8"></script>
+<script src="js/projectView.js" charset="utf-8"></script>
 
 </script>
 </body>

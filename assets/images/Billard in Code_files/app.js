@@ -28,7 +28,8 @@ Project.prototype.toHtml = function() {
   $newProject.find('time').attr('datetime', this.date);
   $newProject.addClass('pbox');
 
-  $('.template').hide();
+  $('section.template').hide('.template');
+
   $('section').removeAttr('style');
   return $newProject;
 };

@@ -1,6 +1,6 @@
 Body{
   width:100%;
-  min-width: 320px;
+  min-width: 380px;
 }
 .wrapper{
   width: 100%;
@@ -56,8 +56,6 @@ Body{
   background-color: rgba(0, 0, 0, 0.5);
   border: solid black 3px;
   border-top-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .main-nav ul {
@@ -131,23 +129,24 @@ p{
 }
 
 
-.projectstodom{
-  display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  .projectstodom{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+  }
 }
-
 
 .pbox{
   flex-grow: 1;
   flex-basis: 0;
-  margin: 1.5%;
+  margin-left: 3%;
   max-width: 313px;
-}
 
+}
+}
 
 .proheader{
   width: 45%;
@@ -160,7 +159,7 @@ p{
 }
 
 .wrap {
-  width: 19em;
+  width: 20em;
   height: 192px;
   padding: 0;
   overflow: hidden;
@@ -210,6 +209,7 @@ p{
     background-color: rgba(0, 0, 0, 0.5);
     border: solid 3px;
     width: 96%;
+    padding-left: 0;
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -237,29 +237,29 @@ p{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     align-items: flex-start;
   }
+}
 
+.pbox{
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-left: 3%;
+  max-width: 313px;
 
-  .pbox{
-    flex-grow: 1;
-    flex-basis: 0;
-    margin: 1.5%;
-    max-width: 313px;
+}
+}
 
-  }
+.proheader{
+  width: 45%;
+  display: inline-flex;
+}
 
-
-  .proheader{
-    width: 45%;
-    display: inline-flex;
-  }
-
-  .description{
-    width: 100%;
-    text-align: left;
-  }
+.description{
+  width: 100%;
+  text-align: left;
+}
 
 }

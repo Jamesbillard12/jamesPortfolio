@@ -14,9 +14,8 @@ header {
 
 .mainflex h1{
   font-size: 3vw;
-  text-align: center;
+  text-align: left;
   color: white;
-  max-width: 3px;
 }
 
 h2{
@@ -28,6 +27,7 @@ h2{
 
 .wrapper{
   background-color: black;
+  width: auto;
 }
 ul{
   background-color: rgba(0, 0, 0, 0.5);
