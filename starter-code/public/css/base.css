@@ -1,7 +1,7 @@
 
 
 header {
-  background-image: url('../assets/images/15780734_10154014027806196_6293599165744642866_n.jpg');
+  background-image: url('/assets/images/15780734_10154014027806196_6293599165744642866_n.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -58,7 +58,7 @@ a{
 
 img{
   max-width: 20%;
-  
+
 }
 
 p{
@@ -72,7 +72,7 @@ time {
   color: white;
 }
 .about{
-  background-image: url('../assets/images/tilablewood.jpg');
+  background-image: url('/assets/images/tilablewood.jpg');
   border-top: ridge 10px grey;
   border-bottom: ridge 10px grey;
   height: 100%;
@@ -80,7 +80,7 @@ time {
 }
 
 .projects{
-  background-image: url('../assets/images/mable black.jpg');
+  background-image: url('/assets/images/mable black.jpg');
   border-top: ridge 10px grey;
   border-bottom: ridge 10px grey;
   height: 100%;
@@ -88,7 +88,7 @@ time {
 }
 
 .music{
-  background-image: url('../assets/images/30852582-Skull-and-Flowers-Monochrome-Seamless-Background-Stock-Photo.jpg');
+  background-image: url('/assets/images/30852582-Skull-and-Flowers-Monochrome-Seamless-Background-Stock-Photo.jpg');
   border-top: ridge 10px grey;
   border-bottom: ridge 10px grey;
   height: 100%;
@@ -96,7 +96,7 @@ time {
 }
 
 footer{
-  background-image: url('../assets/images/Rock-Wall-Beautiful-Wallpapers.jpg');
+  background-image: url('/assets/images/Rock-Wall-Beautiful-Wallpapers.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0%;
