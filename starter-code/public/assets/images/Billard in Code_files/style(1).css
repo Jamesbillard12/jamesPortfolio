@@ -1,0 +1,332 @@
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url(images/fishing-background-12.jpg)no-repeat 50% 50% fixed;
+  margin: 0;
+  background-position: 0px 1px;
+}
+
+
+.header{
+  width: 70%;
+  margin-left: 15%;
+  height: auto;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+}
+
+.headertext {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.catchphrase {
+  text-align: center;
+  margin-top: -20px;
+  font-style: italic;
+  font-family: 'Lobster', cursive;
+}
+
+.img {
+  background-image: url(/Users/jamesrbillard/programs/code_fellows/code_201/lab_8/my-lab8/Cookie-stand1/images/woodbackground.jpg);
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  font-family: 'Indie Flower','Inconsolata', monospace;
+  padding-top: 15px;
+}
+.est {
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.fish {
+  width: 35%;
+  margin-left: 32%;
+  margin-bottom: 15px;
+}
+.storeNav{
+  margin-left: 15%;
+  border-style: solid;
+  border-width: thin;
+  background-color: rgba(42, 44, 44, 0.5);
+  width: 70.6%;
+  height: 38px;
+}
+
+.groupnav{
+  margin-top: 12px;
+  margin-left: 2px;
+}
+.nav {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: -3px;
+  margin-left: -3px;
+  background-color: rgba(42, 44, 44, 0.5);
+}
+
+.nav:hover{
+  text-decoration: underline;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.contentaside{
+  width: 70%;
+  height: 100%;
+  min-height: 550px;
+  margin-top: -7px;
+}
+
+.aside {
+  height: 100%;
+  width: 20%;
+  background-color: rgba(42, 44, 44, 0.5);
+  border-style: solid;
+  border-width: 2px;
+  float: left;
+  margin-left: 21.4%
+}
+
+.mapaddress {
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+  padding-top: 10px;
+  margin-left: 5px;
+  text-align: left;
+}
+
+.opentime {
+  padding-left: 15px;
+  font-size: 1vw;
+}
+
+.content {
+  height: 100%;
+  width: 80.3%;
+  margin-left: 41.8%;
+  margin-top: 7px;
+  border-style: solid;
+  color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  background-color: rgba(42, 44, 44, 0.5);
+}
+
+h2 {
+  padding-top: 20px;
+  padding-left: 15px;
+  font-size: 2vw;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.offensiveex {
+  padding-top: 10px;
+  padding-left: 15px;
+
+}
+.table {
+  margin-left: -10%;
+}
+
+td, th, tr {
+  border-bottom-style: groove;
+  text-align-last: center;
+  font-size: 1.3vw;
+
+}
+
+
+th {
+  background-color: rgba(48, 44, 44, 0.9);
+  color: white;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+td {
+  height: 20%;
+  padding: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 1vw;
+  width: 1000px;
+}
+
+
+table {
+
+  border-collapse: collapse;
+  overflow-y: scroll;
+  margin-left: -4.5%;
+  margin-top: 10px;
+  margin-bottom: -9px;
+  display: block;
+  width: 100%;
+  height: auto;
+  float: right;
+}
+
+.odd {
+  background-color: rgba(61, 61, 59, 0.6);
+  color: white;
+  width: 100px;
+  font-family: Helvetica, sans-serif;
+}
+
+.even {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100px;
+  color: black;
+  font-family: Helvetica, sans-serif
+
+}
+
+
+form {
+  display: inline-block;;
+  margin-top: 10px;
+  margin-left: 9%;
+}
+
+
+label{
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 250px;
+  text-align: right;
+  margin-right: 5px;
+}
+
+input {
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+}
+
+.submit {
+  margin-left: 45%;
+}
+
+.footer{
+  width: 70%;
+  background-color: rgba(42, 44, 44, 0.5);
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 15%;
+  height: auto;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+}
+
+p {
+  color: white;
+  text-align: left: 5px;
+  margin: 0;
+
+}
+
+.titleformat {
+  font-weight: bold;
+  margin-left: 15px;
+  font-family: Georgia, serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+.footerp {
+  padding: 20px;
+  text-align: left;
+  font-style: italic;
+}
+
+#totalsTR {
+  background-color: rgba(255, 0, 0, 0.3);
+  color: white;
+  height: 20%;
+  padding: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 1vw;
+  width: 100px;
+}
+
+.family{
+  width: 67%;
+  margin-top: 5%;
+  margin-left: 18%;
+}
+
+.familycaption{
+  margin-left: 27%;
+  font-size: 1vw;
+}
+
+.buystuff{
+  display: inline-flex;
+  margin-top: 6%;
+  margin-left: 7%;
+}
+
+.item1{
+  float: left;
+  width: 55%;
+}
+
+.sticker{
+  width: 84%;
+}
+
+.button1{
+  margin-left: 31%;
+}
+
+.item2{
+  float: left;
+  width: 55%;
+}
+
+.shirt{
+  width:74%;
+}
+
+.button2{
+  margin-left: 27%;
+}
+
+.map{
+  margin-top: 6%;
+  margin-left: 9%;
+  width: 82%;
+}
