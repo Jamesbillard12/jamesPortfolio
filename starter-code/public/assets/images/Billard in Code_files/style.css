@@ -1,0 +1,92 @@
+body {
+  background-image: url('http://www.newfoundlandlabrador.com/Content/images/homepage-slides/slide-7.jpg');
+  background-attachment: fixed;
+}
+
+#headerwrap {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
+#name {
+
+  text-align: left;
+}
+
+#email {
+  color: white;
+  text-decoration: none;
+  text-align: right;
+
+}
+
+#main_wrapper {
+ display: flex;
+ border-style: solid;
+ border-radius: 10px;
+ border-color: Black;
+
+}
+
+#content {
+  font-family: 'Alegreya', serif;
+  flex: 0 0 50%;
+  background-color: black;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-left: 5px;
+
+}
+
+#button {
+  margin-left: 21%;
+  background: white;
+  background-image: -webkit-linear-gradient(top, white, grey);
+  background-image: -moz-linear-gradient(top, white, grey);
+  background-image: -ms-linear-gradient(top, white, grey);
+  background-image: -o-linear-gradient(top, white, grey);
+  background-image: linear-gradient(to bottom, white, grey);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 3px 4px 4px #666666;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: 'Alegreya', serif;
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 2px;
+  text-decoration: none;
+}
+#button:hover {
+  background: red;
+  text-decoration: none;
+}
+#bold {
+  font-weight: 900;
+}
+
+#rightcolumnwrap{
+ flex: 1;
+  background-image: url('https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/15741217_10154013950751196_8629262372806978000_n.jpg?oh=c48bb8e9f3e5f7c6cf0b12a55636a76f&oe=5910C778');
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, .5);
+  background-position: left center;
+}
+
+#footerwrap {
+  border-style: solid;
+  border-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: white;
+}
+
+#addy {
+  margin-left: 37%;
+}

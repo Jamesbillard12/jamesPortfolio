@@ -1,0 +1,117 @@
+html {
+  background-image: url(img/13600345_10153575966301196_3747734420092013400_n.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 1280px;
+}
+.header {
+  border-style: solid;
+  align-items: center;
+  border-radius: 5px;
+  width: 1257px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav{
+  float: right;
+  display: inline-flex;
+  margin-top: -31px;
+  margin-right: -3px;
+}
+.nav{
+  border-style: solid;
+  padding: 5px;
+  padding-right: 16px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  font-weight: bold;
+  font-family: 'Sansita', sans-serif;
+}
+
+.rendered-results {
+  border-style: solid;
+  float: left;
+  width: 331px;
+  height: 503px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: 'Sansita', sans-serif;
+  font-weight: bold;
+}
+
+.pictureHolder{
+  margin-top: 10px;
+  margin-left: 343px;
+  padding: 5px;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 904px;
+  height: 253px;
+}
+
+img{
+  padding-left: 32px;
+  margin-right: 12px;
+}
+h1 {
+  font-size: 2em;
+  margin: 0px;
+  margin-top: -77px;
+  margin-left: 265px;
+  font-weight: bold;
+  font-family: 'Supermercado One', cursive;
+  font-size: 64px;
+}
+h2 {
+  margin-left: 125px;
+  font-weight: bold;
+  font-family: 'Supermercado One', cursive;
+}
+.bus{
+  margin-top: 0px;
+  padding-left: 0px;
+}
+
+/*button*/
+.results{
+  position: absolute;
+  width: 380px;
+  height: 50px;
+  margin-left: 286px;
+
+}
+
+.content{
+  border-style: solid;
+  border-radius: 5px;
+  width: 915px;
+  height: 181px;
+  margin-left: 342px;
+  margin-top: 53px;
+  font-size: 14.5px;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+p{
+  margin: 0px;
+  padding-left: 10px;
+}
+.footer {
+  margin-top: 5px;
+  border-style: solid;
+  align-items: center;
+  border-radius: 5px;
+  width: 1257px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.chart {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-style: solid;
+  width: 400px;
+  margin-right: 250px;
+  float: right;
+}
