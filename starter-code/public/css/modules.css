@@ -1,0 +1,24 @@
+/*loading Bird*/
+html {
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+html, body {
+    min-height: auto;
+}
+html.loading {
+    background: white url('/assets/GIF/flyingbirdies.gif') no-repeat 50% 10%;
+
+    -webkit-transition: background-color 0;
+    transition: background-color 0;
+}
+body {
+    -webkit-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+html.loading body {
+    opacity: 0;
+
+    -webkit-transition: opacity 0;
+    transition: opacity 0;
+}
