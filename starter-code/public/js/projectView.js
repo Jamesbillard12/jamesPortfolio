@@ -43,7 +43,7 @@ view.handleMainNav = function () {
 
     event.preventDefault();
     $('section.tab-content').hide();
-    // 2.
+    console.log('#' + $(this).attr('data-content'));
     $('#' + $(this).attr('data-content')).fadeIn();
 
   });

@@ -4,8 +4,9 @@ var resumeArray = [];
 
 function Resume(aboutRawDataObj){
   this.company = aboutRawDataObj.company;
-  this.position= aboutRawDataObj.position
-  this.cityPlace = aboutRawDataObj.cityPlace
+  this.position= aboutRawDataObj.position;
+  this.cityPlace = aboutRawDataObj.cityPlace;
+  this.imgURL = aboutRawDataObj.imgURL;
   this.employmentPeriodStart = aboutRawDataObj.employmentPeriodStart;
   this.employmentPeriodEnd = aboutRawDataObj.employmentPeriodEnd;
   this.description = aboutRawDataObj.description;

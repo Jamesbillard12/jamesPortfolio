@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="loading">
 <head>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
@@ -17,13 +17,14 @@
     <section class="abox" data-category="{{acategory}}">
       <section>
         <h1 class="resTitle">{{company}}</h1>
-      </Section>
+        <img class= "resIMG" src= "{{imgURL}}">
+      </section>
       <section>
-        <p>Location: {{cityPlace}}</p>
-        <p>Duration: {{employmentPeriodStart}} to {{employmentPeriodEnd}}</p>
-        <p>Position: {{position}}</p>
-        <section class="article-body"><p>{{description}}</p></section>
-        <a href="#" class="read-on">Click Here to Read More About this Position &rarr;</a>
+        <p class="ap">Location: {{cityPlace}}</p>
+        <p class="ap">Duration: {{employmentPeriodStart}} to {{employmentPeriodEnd}}</p>
+        <p class="ap">Position: {{position}}</p>
+        <section class="article-body"><p class="ap">{{description}}</p></section>
+        <a href="#" class="read-on ap">Click Here to Read More About this Position &rarr;</a>
       </section>
     </section>
 
@@ -53,7 +54,7 @@
   <section class="wrapper">
     <header class="header clearfix">
       <section class="heading-group-h1">
-        <img src="/assets/PNG/BillardinCode.png" id="titleimg" class="first">
+        <img src="/assets/PNG/BillardinCode.png" id="titleimg" class="first" style="visibility: hidden">
         <h2 id="subtitle" class="second" style="visibility: hidden">A Nube's Adventure in Becoming a Programmer</h2>
       </section>
       <nav class="main-nav"><i class="fa fa-bars icon-menu" aria-hidden="true"></i><ul>
@@ -86,22 +87,19 @@
           </select>
         </li>
       </ul>
-      <h1>About Me:</h1>
+      <h1 class="resTitle">About Me:</h1>
       <section class="aboutmain">
+        <h1 class="abox2 resTitle">Introduction:</h1>
         <section class="abox" data-category="Introduction">
-
           <img src="/assets/images/JamesBillard.jpg" class="mypic">
           <span class="sidebyside">
-            <p>My name is James Billard and I am originally from Newfoundland, Canada. I am currently studying to be a website programmer at Code Fellows vocational school in Seattle, Wa.</p>
+            <p class="ap">My name is James Billard and I am originally from Newfoundland, Canada. I am currently studying to be a website programmer at Code Fellows vocational school in Seattle, Wa.</p>
           </span>
         </section>
 
 
-        <section id="abouttodom">
-
-
-        </section>
-
+        <h1 class="resTitle abox2">Work Experience:</h1>
+        <section id="abouttodom"></section>
       </section>
     </section>
 
@@ -144,6 +142,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
+
 <script src="/js/aboutView.js" charset="utf-8"></script>
 <script src="/js/aboutApp.js" charset="utf-8"></script>
 
@@ -153,6 +152,7 @@
 <script src="/js/musicapp.js" charset="utf-8"></script>
 
 <script src="/js/jqueryanimate.js" charset="utf-8"></script>
+
 
 </body>
 </html>

@@ -1,6 +1,7 @@
 [
   {
     "company":"Seattle Public Schools",
+    "imgURL": "/assets/PNG/Seattle-Public-Schools-logo.png",
     "cityPlace": "Seattle, Washington",
     "position": "5th Grade Teacher",
     "employmentPeriodStart": "2016",
@@ -10,6 +11,7 @@
   },
   {
     "company":"Fort McMurray Public School District",
+    "imgURL": "/assets/images/Fort-McMurray-public-school.jpg",
     "cityPlace": "Fort McMurray, Alberta",
     "position": "Teacher-on-Call",
     "employmentPeriodStart": "2014",
@@ -19,6 +21,7 @@
   },
   {
     "company":"Northern Lights School Division #113",
+    "imgURL": "/assets/images/northern-lights-school-division-113-squarelogo-1457683012237.png",
     "cityPlace": "La Ronge, Saskatchewan",
     "position": "Pre-Cam Community School, La Ronge, Saskatchewan, Grade 5 French Immersion Teacher",
     "employmentPeriodStart": "2013",
@@ -28,6 +31,7 @@
   },
   {
     "company":"Northern Lights School Division #113",
+    "imgURL": "/assets/images/northern-lights-school-division-113-squarelogo-1457683012237.png",
     "cityPlace": "La Ronge, Saskatchewan",
     "position": "Churchill Community High School, La Ronge, Saskatchewan, Satellite Teacher (English 8, 9 and 11, Core French 7-9, Wellness 10 French Immersion and English)",
     "employmentPeriodStart": "2012",
@@ -37,6 +41,7 @@
   },
   {
     "company":"Yukon Government",
+    "imgURL": "/assets/images/Screen Shot 2017-01-18 at 3.40.52 PM.png",
     "cityPlace": "Watson Lake, Yukon",
     "position": "Core French grades 1-7, Music, Technology, Health, and Physical Education)",
     "employmentPeriodStart": "2009",
