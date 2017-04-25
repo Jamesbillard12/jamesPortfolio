@@ -10,6 +10,16 @@
     "acategory": "Work Experience"
   },
   {
+    "company":"Seattle Public SchoolsBANANA",
+    "imgURL": "/assets/PNG/Seattle-Public-Schools-logo.png",
+    "cityPlace": "Seattle, Washington",
+    "position": "5th Grade Teacher",
+    "employmentPeriodStart": "2016",
+    "employmentPeriodEnd": "2017",
+    "description": "Differentiated instruction for diverse learners in a multi-cultural school environments. Integrated interactive technology into daily instruction to promote active learning and participation. Modified instruction for English Language Learners and students on individual education programs by using various intervention techniques as well as presented information engaging to auditory, visual, and kinaesthetic learners. Worked collaboratively and demonstrated open, positive communication with the school community.",
+    "acategory": "Education"
+  },
+  {
     "company":"Fort McMurray Public School District",
     "imgURL": "/assets/images/Fort-McMurray-public-school.jpg",
     "cityPlace": "Fort McMurray, Alberta",
