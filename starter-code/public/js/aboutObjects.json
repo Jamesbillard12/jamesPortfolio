@@ -10,16 +10,6 @@
     "acategory": "Work Experience"
   },
   {
-    "company":"Seattle Public SchoolsBANANA",
-    "imgURL": "/assets/PNG/Seattle-Public-Schools-logo.png",
-    "cityPlace": "Seattle, Washington",
-    "position": "5th Grade Teacher",
-    "employmentPeriodStart": "2016",
-    "employmentPeriodEnd": "2017",
-    "description": "Differentiated instruction for diverse learners in a multi-cultural school environments. Integrated interactive technology into daily instruction to promote active learning and participation. Modified instruction for English Language Learners and students on individual education programs by using various intervention techniques as well as presented information engaging to auditory, visual, and kinaesthetic learners. Worked collaboratively and demonstrated open, positive communication with the school community.",
-    "acategory": "Education"
-  },
-  {
     "company":"Fort McMurray Public School District",
     "imgURL": "/assets/images/Fort-McMurray-public-school.jpg",
     "cityPlace": "Fort McMurray, Alberta",
@@ -58,5 +48,24 @@
     "employmentPeriodEnd": "2012",
     "description": "Designed hands-on education experiences for students which cultivated curiosity, creativity, and critical thinking skills. Took a leadership role in school wide activities; organized school wide functions. Modified instruction for English Language Learners and students on individual education programs by using various intervention techniques as well as presented information engaging to auditory, visual, and kinaesthetic learners.",
     "acategory": "Work Experience"
+  },
+  {
+    "degree":"Bachelors of Education",
+    "school":"University of British Columbia",
+    "imgURL": "/assets/PNG/logo-ubc.png",
+    "cityPlace": "Vancouver, British Columbia",
+    "finished": "2010",
+    "description": "UBC’s Faculty of Education is one of the leading faculties of its kind in the world, advancing educational research and understanding of teaching and learning in a way that celebrates diversity, equity and innovation, and welcomes international collaboration in an increasingly borderless globe.",
+    "acategory": "Education"
+  },
+  {
+    "degree":"Bachelors of Arts",
+    "school":"Saint Mary's University",
+    "imgURL": "/assets/PNG/Saint_Mary's_University_Halifax_logo.png",
+    "cityPlace": "Halifax, Nova Scotia",
+    "finished": "2008",
+    "description": "The Faculty of Arts at Saint Mary’s University believes that research and education in the Humanities and Social Sciences are essential to society. The questions posed by scholars in the Arts, and the nuanced answers their research provides, hold deep and enduring value. For centuries, across an array of disciplines, research in the Arts has enriched human experience, providing a forum for intellectual inquiry that is not available anywhere else.",
+    "acategory": "Education"
   }
+
 ]
