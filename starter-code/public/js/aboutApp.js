@@ -32,6 +32,12 @@ Resume.prototype.aboutToHtml = function() {
   return aboutTemplate(this);
 };
 
+Edu.prototype.aboutToHtml = function() {
+  var aboutSource = $('#aboutTemplate').html();
+  var aboutTemplate = Handlebars.compile(aboutSource);
+  return aboutTemplate(this);
+};
+
 
 if (localStorage.aboutRawData) {
   var about = JSON.parse(localStorage.aboutRawData);
@@ -50,9 +56,16 @@ if (localStorage.aboutRawData) {
     aboutView.setTeasers();
   }
   if ($(about).filter(function (i,n){return n.acategory==='Education'})) {
-    var about = $(about).filter(function (i,n){return n.acategory==='Education'});
-    console.log(about);
-    about.each(function(eduObject) {
+
+    var educ = $(about).filter(function (i,n){return n.acategory==='Education'});
+
+    console.log(educ);
+
+    var dog = jQuery.makeArray( educ );
+
+    console.log(dog);
+
+    dog.forEach(function(eduObject) {
       resumeEduArray.push(new Edu(eduObject));
     });
     resumeEduArray.forEach(function(about) {
