@@ -50,6 +50,15 @@
     "acategory": "Work Experience"
   },
   {
+    "degree":"Code 201",
+    "school":"Code Fellows, Seattle",
+    "imgURL": "/assets/PNG/Codefellows.png",
+    "cityPlace": "Seattle, Washington",
+    "finished": "2017",
+    "description": "We're on a mission to teach the world how to write excellent code, help software developers accelerate their careers, and assist organizations with finding and training high-quality talent. We have big plans and are looking for more passionate team members to help.",
+    "acategory": "Education"
+  },
+  {
     "degree":"Bachelors of Education",
     "school":"University of British Columbia",
     "imgURL": "/assets/PNG/logo-ubc.png",
