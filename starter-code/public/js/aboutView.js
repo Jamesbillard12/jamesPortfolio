@@ -25,6 +25,7 @@ aboutView.aboutHandleCategoryFilter = function() {
       $('section[data-category="' + $(this).val() + '"]').effect( "bounce" );
       var $newArticle = ($(this).val());
       console.log($newArticle);
+      
     } else {
 
       $('section.abox').animate({opacity:1}).delay(200).slideDown('slow');
