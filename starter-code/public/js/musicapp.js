@@ -25,7 +25,6 @@ if (localStorage.musicRawData) {
     $('#musictodom').append(music.musicToHtml());
   });
 }else {
-
   $(function(){
     $.ajax({
       url: '/js/musicobjects.json',

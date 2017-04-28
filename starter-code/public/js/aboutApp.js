@@ -55,7 +55,6 @@ if (localStorage.aboutRawData) {
       $('#abouttodom').append(about.aboutToHtml());
     });
   }
-
   if ($(about).filter(function (i,n){
     return n.acategory==='Education'})) {
       var getEduc = $(about).filter(function (i,n){return n.acategory==='Education'});
@@ -70,10 +69,7 @@ if (localStorage.aboutRawData) {
     aboutView.aboutPopulateFilter();
     aboutView.aboutHandleCategoryFilter();
     aboutView.setTeasers();
-
-
-
-  }else {
+  } else {
     $(function(){
       $.ajax({
         url: '/js/aboutObjects.json',

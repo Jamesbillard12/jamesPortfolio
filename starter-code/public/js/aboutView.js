@@ -12,22 +12,17 @@ aboutView.aboutPopulateFilter = function() {
     }
   });
 };
-//
 
 
 aboutView.aboutHandleCategoryFilter = function() {
   $('#about-category-filter').on('change', function() {
     if ($(this).val()) {
-
       $('section.abox').hide('pulsate', {duration: 1000});
-
       $('section[data-category="' + $(this).val() + '"]').animate({opacity:1}).delay(655).slideDown('slow');
       $('section[data-category="' + $(this).val() + '"]').effect( "bounce" );
       var $newArticle = ($(this).val());
       console.log($newArticle);
-      
     } else {
-
       $('section.abox').animate({opacity:1}).delay(200).slideDown('slow');
       $('article.template').hide();
     }
@@ -35,18 +30,14 @@ aboutView.aboutHandleCategoryFilter = function() {
   });
 };
 
-
 aboutView.setTeasers = function() {
-
   $('.article-body').hide();
-  $('section.abox').on('click', '.read-on', function(){
+  $('section.abox').on('click', '.read-on', function(event){
     event.preventDefault();
     $(this).siblings('section.article-body').slideToggle();
-
     if ($(this).html() === 'Click Here to Read More About this Position →') {
       $(this).html('Read less &larr;');
-    }
-    else {
+    } else {
       $(this).html('Click Here to Read More About this Position →');
     }
   });
