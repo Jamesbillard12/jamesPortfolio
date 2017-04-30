@@ -27,16 +27,16 @@ if (localStorage.aboutRawData) {
   var about = JSON.parse(localStorage.aboutRawData);
 
   if ($(about).filter(function (i,n){return n.acategory==='Work Experience'})) {
-      var renderExpToVilJs = jQuery.makeArray($(about).filter(function (i,n){return n.acategory==='Work Experience'}));
+      var renderExpToVilJs = jQuery.makeArray($(about).filter((i,n)=>{return n.acategory==='Work Experience'}));
       Resume.resumeArray = renderExpToVilJs.map((ele)=>{return new Resume(ele);});
-      Resume.resumeArray.forEach(function(about) {
+      Resume.resumeArray.forEach((about)=> {
         $('#abouttodom').append(about.aboutToHtml());
       });
     }
   if ($(about).filter(function (i,n){return n.acategory==='Education'})) {
-      var renderEduToVilJs = jQuery.makeArray($(about).filter(function(i,n){return n.acategory==='Education'}));
+      var renderEduToVilJs = jQuery.makeArray($(about).filter((i,n)=>{return n.acategory==='Education'}));
       Edu.resumeEduArray = renderEduToVilJs.map((ele)=>{return new Edu(ele);});
-      Edu.resumeEduArray.forEach(function(about) {
+      Edu.resumeEduArray.forEach((about)=> {
         $('#aboutedutodom').append(about.aboutEduToHtml());
       });
     }
@@ -53,16 +53,16 @@ if (localStorage.aboutRawData) {
       var about = JSON.parse(localStorage.aboutRawData);
 
       if ($(about).filter(function (i,n){return n.acategory==='Work Experience'})) {
-          var renderExpToVilJs = jQuery.makeArray($(about).filter(function (i,n){return n.acategory==='Work Experience'}));
+          var renderExpToVilJs = jQuery.makeArray($(about).filter((i,n)=>{return n.acategory==='Work Experience'}));
           Resume.resumeArray = renderExpToVilJs.map((ele)=>{return new Resume(ele);});
-          Resume.resumeArray.forEach(function(about) {
+          Resume.resumeArray.forEach((about)=> {
             $('#abouttodom').append(about.aboutToHtml());
           });
         }
       if ($(about).filter(function (i,n){return n.acategory==='Education'})) {
-          var renderEduToVilJs = jQuery.makeArray($(about).filter(function(i,n){return n.acategory==='Education'}));
+          var renderEduToVilJs = jQuery.makeArray($(about).filter((i,n)=>{return n.acategory==='Education'}));
           Edu.resumeEduArray = renderEduToVilJs.map((ele)=>{return new Edu(ele);});
-          Edu.resumeEduArray.forEach(function(about) {
+          Edu.resumeEduArray.forEach((about)=> {
             $('#aboutedutodom').append(about.aboutEduToHtml());
           });
         }
