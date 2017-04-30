@@ -17,9 +17,6 @@ Project.prototype.toHtml = function() {
   return template(this);
 };
 
-
-
-
 if (localStorage.projectRawData) {
   var project = JSON.parse(localStorage.projectRawData);
   project.forEach(function(projectObject) {
@@ -28,11 +25,9 @@ if (localStorage.projectRawData) {
   projectsArray.forEach(function(pjects) {
     $('#projectstodom').append(pjects.toHtml());
   });
-
   $('section.tab-content').hide();
   $('#aboutMe').fadeIn();
   view.populateFilter();
-
 }else {
   $(function(){
     $.ajax({
@@ -41,15 +36,12 @@ if (localStorage.projectRawData) {
     }).done(function(data) {
       localStorage.setItem('projectRawData', JSON.stringify(data));
       var project = JSON.parse(localStorage.projectRawData);
-
       project.forEach(function(projectObject) {
         projectsArray.push(new Project(projectObject));
       });
-
       projectsArray.forEach(function(pjects) {
         $('#projectstodom').append(pjects.toHtml());
       });
-
       $('section.tab-content').hide();
       $('#aboutMe').fadeIn();
       view.populateFilter();

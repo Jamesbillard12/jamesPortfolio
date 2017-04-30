@@ -48,5 +48,33 @@
     "employmentPeriodEnd": "2012",
     "description": "Designed hands-on education experiences for students which cultivated curiosity, creativity, and critical thinking skills. Took a leadership role in school wide activities; organized school wide functions. Modified instruction for English Language Learners and students on individual education programs by using various intervention techniques as well as presented information engaging to auditory, visual, and kinaesthetic learners.",
     "acategory": "Work Experience"
+  },
+  {
+    "degree":"Code 201",
+    "school":"Code Fellows, Seattle",
+    "imgURL": "/assets/PNG/Codefellows.png",
+    "cityPlace": "Seattle, Washington",
+    "finished": "2017",
+    "description": "We're on a mission to teach the world how to write excellent code, help software developers accelerate their careers, and assist organizations with finding and training high-quality talent. We have big plans and are looking for more passionate team members to help.",
+    "acategory": "Education"
+  },
+  {
+    "degree":"Bachelors of Education",
+    "school":"University of British Columbia",
+    "imgURL": "/assets/PNG/logo-ubc.png",
+    "cityPlace": "Vancouver, British Columbia",
+    "finished": "2010",
+    "description": "UBC’s Faculty of Education is one of the leading faculties of its kind in the world, advancing educational research and understanding of teaching and learning in a way that celebrates diversity, equity and innovation, and welcomes international collaboration in an increasingly borderless globe.",
+    "acategory": "Education"
+  },
+  {
+    "degree":"Bachelors of Arts",
+    "school":"Saint Mary's University",
+    "imgURL": "/assets/PNG/Saint_Mary's_University_Halifax_logo.png",
+    "cityPlace": "Halifax, Nova Scotia",
+    "finished": "2008",
+    "description": "The Faculty of Arts at Saint Mary’s University believes that research and education in the Humanities and Social Sciences are essential to society. The questions posed by scholars in the Arts, and the nuanced answers their research provides, hold deep and enduring value. For centuries, across an array of disciplines, research in the Arts has enriched human experience, providing a forum for intellectual inquiry that is not available anywhere else.",
+    "acategory": "Education"
   }
+
 ]

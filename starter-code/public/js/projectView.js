@@ -12,23 +12,16 @@ view.populateFilter = function() {
     }
   });
 };
-//
-
 
 view.handleCategoryFilter = function() {
   $('#category-filter').on('change', function() {
     if ($(this).val()) {
       console.log('happening');
-
-
       $('section.pbox').fadeOut('slow');
-
       $('section[data-category="' + $(this).val() + '"]').delay(800).fadeIn('slow');
-
       var $newArticle = ($(this).val());
       console.log($newArticle);
     } else {
-
       $('section.pbox').fadeIn();
       $('article.template').hide();
     }
@@ -37,10 +30,7 @@ view.handleCategoryFilter = function() {
 };
 
 view.handleMainNav = function () {
-
-
-  $('.main-nav').on('click', '.tab', function() {
-
+  $('.main-nav').on('click', '.tab', function(event) {
     event.preventDefault();
     $('section.tab-content').hide();
     console.log('#' + $(this).attr('data-content'));

@@ -30,6 +30,23 @@
 
   </script>
 
+  <script id="aboutEduTemplate" type="text/x-handlebars-template">
+    <section class="abox" data-category="{{acategory}}">
+      <section>
+        <h1 class="resTitle">{{degree}}</h1>
+        <img class= "resIMG" src= "{{imgURL}}">
+      </section>
+      <section>
+        <p class="ap">{{school}}</p>
+        <p class="ap">Location: {{cityPlace}}</p>
+        <p class="ap">Completion: {{finished}}</p>
+        <section class="article-body"><p class="ap">{{description}}</p></section>
+        <a href="#" class="read-on ap">Click Here to Read More About this School's Mission &rarr;</a>
+      </section>
+    </section>
+
+  </script>
+
   <script id="template" type="text/x-handlebars-template">
     <section class="pbox" data-category="{{category}}">
       <section id="proheader" class="proheader">
@@ -100,6 +117,8 @@
 
         <h1 class="resTitle abox2">Work Experience:</h1>
         <section id="abouttodom"></section>
+        <h1 class="resTitle abox2">Education:</h1>
+        <section id="aboutedutodom"></section>
       </section>
     </section>
 
@@ -113,14 +132,14 @@
           </select>
         </li>
       </ul>
-      <h1>My Projects:</h1>
+      <h1 class="resTitle">My Projects:</h1>
 
       <section id="projectstodom" class="projectstodom"></section>
     </section>
 
 
     <section id="myMusic" class="music tab-content">
-      <h1>My Music:</h1>
+      <h1 class="resTitle">My Music:</h1>
       <section id="musictodom"></section>
 
     </section>
