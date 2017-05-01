@@ -1,32 +1,33 @@
 'use strict';
 ((module)=>{
-  var projectsArray = [];
 
   function Project(rawDataObj){
-    this.name = rawDataObj.name;
-    this.description = rawDataObj.description;
-    this.url = rawDataObj.url;
-    this.date = rawDataObj.date;
-    this.category = rawDataObj.category;
+    Object.keys(rawDataObj).forEach(key => this[key] = rawDataObj [key]);
   }
+  Project.projectsArray = [];
 
   Project.prototype.toHtml = function() {
-    var source = $('#template').html();
-    var template = Handlebars.compile(source);
+    var template = Handlebars.compile($('#template').html());
     return template(this);
+  };
+
+  Project.prototype.numWordsAll= () => {
+    return Project.projectsArray.map((projects)=>{
+      var wordCount = projects.description.split(' ');
+      return wordCount.length;
+    }).reduce((a, b) => {
+      return a + b;
+    })
   };
 
   Project.prototype.projectAjax = function(){
     if (localStorage.projectRawData) {
       var project = JSON.parse(localStorage.projectRawData);
-      project.forEach(function(projectObject) {
-        projectsArray.push(new Project(projectObject));
-      });
-      projectsArray.forEach(function(pjects) {
+      Project.projectsArray= project.map((ele)=>{return new Project(ele);})
+      Project.projectsArray.forEach(function(pjects) {
         $('#projectstodom').append(pjects.toHtml());
       });
-      $('section.tab-content').hide();
-      $('#aboutMe').fadeIn();
+      $('#projectStats .words').text(Project.prototype.numWordsAll())
       view.populateFilter();
       view.handleCategoryFilter();
     }else {
@@ -37,14 +38,11 @@
         }).done(function(data) {
           localStorage.setItem('projectRawData', JSON.stringify(data));
           var project = JSON.parse(localStorage.projectRawData);
-          project.forEach(function(projectObject) {
-            projectsArray.push(new Project(projectObject));
-          });
-          projectsArray.forEach(function(pjects) {
+          Project.projectsArray= project.map((ele)=>{return new Project(ele);})
+          Project.projectsArray.forEach(function(pjects) {
             $('#projectstodom').append(pjects.toHtml());
           });
-          $('section.tab-content').hide();
-          $('#aboutMe').fadeIn();
+          $('#projectStats .words').text(Project.prototype.numWordsAll())
           view.populateFilter();
           view.handleCategoryFilter();
         })
