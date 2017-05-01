@@ -6,7 +6,6 @@
   // code that used to be in index.html.
   // Also be sure to hide all the main section elements, and reveal the #articles section:
   musicController.index = () => {
-    window.Music.prototype.musicAjax();
     $('.tab-content').hide();
     $('#myMusic').fadeIn('slow');
   };

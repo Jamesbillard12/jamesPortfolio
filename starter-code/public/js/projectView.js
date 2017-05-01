@@ -28,5 +28,5 @@ view.handleCategoryFilter = function() {
     $('#author-filter').val('');
   });
 };
-module.View = View;
+module.view = view;
 })(window);
