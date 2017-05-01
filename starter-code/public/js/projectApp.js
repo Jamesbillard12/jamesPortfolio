@@ -1,5 +1,5 @@
-
 'use strict';
+((module)=>{
 var projectsArray = [];
 
 
@@ -17,39 +17,40 @@ Project.prototype.toHtml = function() {
   return template(this);
 };
 
-if (localStorage.projectRawData) {
-  var project = JSON.parse(localStorage.projectRawData);
-  project.forEach(function(projectObject) {
-    projectsArray.push(new Project(projectObject));
-  });
-  projectsArray.forEach(function(pjects) {
-    $('#projectstodom').append(pjects.toHtml());
-  });
-  $('section.tab-content').hide();
-  $('#aboutMe').fadeIn();
-  view.populateFilter();
-}else {
-  $(function(){
-    $.ajax({
-      url: '/js/projectobjects.json',
-      dataType : "json",
-    }).done(function(data) {
-      localStorage.setItem('projectRawData', JSON.stringify(data));
-      var project = JSON.parse(localStorage.projectRawData);
-      project.forEach(function(projectObject) {
-        projectsArray.push(new Project(projectObject));
-      });
-      projectsArray.forEach(function(pjects) {
-        $('#projectstodom').append(pjects.toHtml());
-      });
-      $('section.tab-content').hide();
-      $('#aboutMe').fadeIn();
-      view.populateFilter();
+Project.prototype.projectAjax = function(){
+  if (localStorage.projectRawData) {
+    var project = JSON.parse(localStorage.projectRawData);
+    project.forEach(function(projectObject) {
+      projectsArray.push(new Project(projectObject));
+    });
+    projectsArray.forEach(function(pjects) {
+      $('#projectstodom').append(pjects.toHtml());
+    });
+    $('section.tab-content').hide();
+    $('#aboutMe').fadeIn();
+    view.populateFilter();
+    view.handleCategoryFilter();
+  }else {
+    $(function(){
+      $.ajax({
+        url: '/js/projectobjects.json',
+        dataType : "json",
+      }).done(function(data) {
+        localStorage.setItem('projectRawData', JSON.stringify(data));
+        var project = JSON.parse(localStorage.projectRawData);
+        project.forEach(function(projectObject) {
+          projectsArray.push(new Project(projectObject));
+        });
+        projectsArray.forEach(function(pjects) {
+          $('#projectstodom').append(pjects.toHtml());
+        });
+        $('section.tab-content').hide();
+        $('#aboutMe').fadeIn();
+        view.populateFilter();
+        view.handleCategoryFilter();
+      })
     })
-  })
+  }
 }
-
-$(function(){
-  view.handleCategoryFilter();
-  view.handleMainNav();
-});
+module.Project = Project;
+})(window);
