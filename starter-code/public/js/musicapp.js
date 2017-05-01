@@ -33,5 +33,6 @@
       });
     }
   }
+  Music.prototype.musicAjax();
   module.Music = Music;
 })(window);
