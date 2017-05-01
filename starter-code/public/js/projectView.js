@@ -29,12 +29,12 @@ view.handleCategoryFilter = function() {
   });
 };
 
-view.handleMainNav = function () {
-  $('.main-nav').on('click', '.tab', function(event) {
-    event.preventDefault();
-    $('section.tab-content').hide();
-    console.log('#' + $(this).attr('data-content'));
-    $('#' + $(this).attr('data-content')).fadeIn();
-
-  });
-};
+// view.handleMainNav = function () {
+//   $('.main-nav').on('click', '.tab', function(event) {
+//     event.preventDefault();
+//     $('section.tab-content').hide();
+//     console.log('#' + $(this).attr('data-content'));
+//     $('#' + $(this).attr('data-content')).fadeIn();
+//
+//   });
+// };
