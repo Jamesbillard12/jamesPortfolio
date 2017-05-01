@@ -1,5 +1,5 @@
 'use strict';
-
+((module)=>{
 var view = {};
 
 view.populateFilter = function() {
@@ -28,13 +28,5 @@ view.handleCategoryFilter = function() {
     $('#author-filter').val('');
   });
 };
-
-view.handleMainNav = function () {
-  $('.main-nav').on('click', '.tab', function(event) {
-    event.preventDefault();
-    $('section.tab-content').hide();
-    console.log('#' + $(this).attr('data-content'));
-    $('#' + $(this).attr('data-content')).fadeIn();
-
-  });
-};
+module.View = View;
+})(window);
