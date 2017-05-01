@@ -112,6 +112,11 @@ ul{
   align-content: center;
 }
 
+.wordCount{
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+
 @media all and (min-width: 431px) {
   a{
     font-size: 1vw;
