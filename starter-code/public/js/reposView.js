@@ -12,7 +12,7 @@
 
   repoView.index = function(repos) {
 
-    $('.removeRepos').remove();
+    
     $('#reposUl').append(
       repos.with('name').map(repoView.repoToDom(repos))
     );

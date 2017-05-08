@@ -49,6 +49,6 @@
       })
     }
   }
-  Project.prototype.projectAjax();
+
   module.Project = Project;
 })(window);
