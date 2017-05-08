@@ -20,9 +20,9 @@
         <img class= "resIMG" src= "{{imgURL}}">
       </section>
       <section>
-        <p class="ap">Location: {{cityPlace}}</p>
-        <p class="ap">Duration: {{employmentPeriodStart}} to {{employmentPeriodEnd}}</p>
-        <p class="ap">Position: {{position}}</p>
+        <p class="ap"><span class="bold">Location:</span> {{cityPlace}}</p>
+        <p class="ap"><span class="bold">Duration:</span> {{employmentPeriodStart}} to {{employmentPeriodEnd}}</p>
+        <p class="ap"><span class="bold">Position:</span> {{position}}</p>
         <section class="article-body"><p class="ap">{{description}}</p></section>
         <a href="#" class="read-on ap">Click Here to Read More About this Position &rarr;</a>
       </section>
@@ -38,8 +38,8 @@
       </section>
       <section>
         <p class="ap">{{school}}</p>
-        <p class="ap">Location: {{cityPlace}}</p>
-        <p class="ap">Completion: {{finished}}</p>
+        <p class="ap"><span class="bold">Location:</span> {{cityPlace}}</p>
+        <p class="ap"><span class="bold">Completion:</span> {{finished}}</p>
         <section class="article-body"><p class="ap">{{description}}</p></section>
         <a href="#" class="read-on ap">Click Here to Read More About this School's Mission &rarr;</a>
       </section>
@@ -69,14 +69,17 @@
 
   <script id="repoTemplate" type="text/x-handlebars-template">
     <li>
-      <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
-      <p class="ap">Description: {{description}}</p>
-      <p class="ap">Language: {{language}}</p>
-      <p class="ap">Created: {{created_at}}</p>
-      <p class="ap">Last updated: {{updated_at}}</p>
-      {{#if watchers_count}}
+      <a href="{{html_url}}" target="_blank"><h1 class="resTitle abox2">{{name}}</h1></a>
+      <section class = "abox">
+        <p class="ap"><span class="bold">Id Number:</span> {{id}}</p>
+        <p class="ap"><span class="bold">Description:</span> {{description}}</p>
+        <p class="ap"><span class="bold">Language:</span> {{language}}</p>
+        <p class="ap"><span class="bold">Created:</span> {{created_at}}</p>
+        <p class="ap"><span class="bold">Last updated:</span> {{updated_at}}</p>
+        {{#if watchers_count}}
         <p class="ap">{{watchers_count}} watching this repo.</p>
-      {{/if}}
+        {{/if}}
+      </section>
     </li>
   </script>
 </head>
@@ -162,51 +165,51 @@
 
     </section>
 
-    <section class="repos tab-content" id="myRepos">
+    <section class="repos about tab-content" id="myRepos">
 
       <h1 class="resTitle">My Repos:</h1>
       <section class="aboutmain">
-          <ul id="reposUl"></ul>
+        <ul id="reposUl"></ul>
       </section>
 
 
-  </main>
+    </main>
 
-  <footer class="footer">
-    <ul>
-      <li class="footul">James Billard</li>
-      <li class="footul">(206)852-3184</li>
-      <li class="footul"><a href="https://www.google.com/maps/place/1323+N+176th+St,+Shoreline,+WA+98133/@47.756177,-122.3440727,17z/data=!3m1!4b1!4m5!3m4!1s0x549010efd371da3b:0x1e596be9a26bb4a9!8m2!3d47.756177!4d-122.341884" class="footul" target="_blank" id="footul">1323 N 176th St. Shoreline, Wa.</a></li>
-    </ul>
-  </footer>
+    <footer class="footer">
+      <ul>
+        <li class="footul">James Billard</li>
+        <li class="footul">(206)852-3184</li>
+        <li class="footul"><a href="https://www.google.com/maps/place/1323+N+176th+St,+Shoreline,+WA+98133/@47.756177,-122.3440727,17z/data=!3m1!4b1!4m5!3m4!1s0x549010efd371da3b:0x1e596be9a26bb4a9!8m2!3d47.756177!4d-122.341884" class="footul" target="_blank" id="footul">1323 N 176th St. Shoreline, Wa.</a></li>
+      </ul>
+    </footer>
 
-</section>
+  </section>
 
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
 
-<script src="/js/aboutView.js" charset="utf-8"></script>
-<script src="/js/aboutApp.js" charset="utf-8"></script>
+  <script src="/js/aboutView.js" charset="utf-8"></script>
+  <script src="/js/aboutApp.js" charset="utf-8"></script>
 
-<script src="/js/projectView.js" charset="utf-8"></script>
-<script src="/js/projectApp.js" charset="utf-8"></script>
+  <script src="/js/projectView.js" charset="utf-8"></script>
+  <script src="/js/projectApp.js" charset="utf-8"></script>
 
-<script src="/js/musicapp.js" charset="utf-8"></script>
+  <script src="/js/musicapp.js" charset="utf-8"></script>
 
-<script src="/js/jqueryanimate.js" charset="utf-8"></script>
+  <script src="/js/jqueryanimate.js" charset="utf-8"></script>
 
-<script src="/js/githubToken.js" charset="utf-8"></script>
+  <script src="/js/githubToken.js" charset="utf-8"></script>
 
 
-<script src="/js/repo.js" charset="utf-8"></script>
-<script src="/js/reposView.js" charset="utf-8"></script>
-<script src="/js/controllers/projectController.js"></script>
-<script src="/js/controllers/reposController.js"></script>
-<script src="/js/controllers/aboutController.js"></script>
-<script src="/js/controllers/musicController.js"></script>
-<script src="/js/controllers/routes.js" charset="utf-8"></script>
+  <script src="/js/repo.js" charset="utf-8"></script>
+  <script src="/js/reposView.js" charset="utf-8"></script>
+  <script src="/js/controllers/projectController.js"></script>
+  <script src="/js/controllers/reposController.js"></script>
+  <script src="/js/controllers/aboutController.js"></script>
+  <script src="/js/controllers/musicController.js"></script>
+  <script src="/js/controllers/routes.js" charset="utf-8"></script>
 
 
 </body>
