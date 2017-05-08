@@ -5,6 +5,8 @@ const app = express()
 
 const PORT = process.env.PORT || 3000;
 
+const constring = process.env.PORT;
+
 app.use(express.static(__dirname + '/public'))
 function proxyGitHub(request, response) {
   console.log('Routing GitHub request for', request.params[0]);
