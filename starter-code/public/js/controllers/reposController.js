@@ -5,6 +5,7 @@
   reposController.index = () => {
     $('.tab-content').hide();
     $('#myRepos').fadeIn('slow');
+    repos.requestRepos(repoView.index);
   };
 
   module.reposController = reposController;
