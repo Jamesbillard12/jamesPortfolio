@@ -1,4 +1,6 @@
-
+.bold{
+  font-weight: 600;
+}
 
 header {
   background-image: url('/assets/images/15780734_10154014027806196_6293599165744642866_n.jpg');
