@@ -3,9 +3,11 @@
 (function(module) {
   const reposController = {};
   reposController.index = () => {
+    $('.removeRepos').remove();
+    repos.requestRepos(repoView.index);
     $('.tab-content').hide();
     $('#myRepos').fadeIn('slow');
-    repos.requestRepos(repoView.index);
+
   };
 
   module.reposController = reposController;

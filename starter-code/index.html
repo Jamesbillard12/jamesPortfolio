@@ -48,7 +48,7 @@
   </script>
 
   <script id="template" type="text/x-handlebars-template">
-    <section class="pbox" data-category="{{category}}">
+    <section class="pbox removeProjects" data-category="{{category}}">
       <section id="proheader" class="proheader">
         <a href="{{url}}"><h1 class="protitle">{{name}}</h1></a>
       </Section>
@@ -68,9 +68,9 @@
   </script>
 
   <script id="repoTemplate" type="text/x-handlebars-template">
-    <li>
-      <a href="{{html_url}}" target="_blank"><h1 class="resTitle abox2">{{name}}</h1></a>
-      <section class = "abox">
+    <li class="removeRepos">
+      <a href="{{html_url}}" target="_blank"><h1 class="resTitle abox2 ">{{name}}</h1></a>
+      <section class = "abox ">
         <p class="ap"><span class="bold">Id Number:</span> {{id}}</p>
         <p class="ap"><span class="bold">Description:</span> {{description}}</p>
         <p class="ap"><span class="bold">Language:</span> {{language}}</p>
