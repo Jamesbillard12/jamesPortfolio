@@ -5,18 +5,15 @@
 
 
 
-  repoView.repoToDom = (render) => {
-    var render = Handlebars.compile($('#repoTemplate').text());
-    return render;
-  }
+
+  const render = Handlebars.compile($('#repoTemplate').text());
+
 
   repoView.index = function(repos) {
 
-    
-    $('#reposUl').append(
-      repos.with('name').map(repoView.repoToDom(repos))
-    );
-  };
 
+    $('#reposUl').append(repos.all.map(render));
+  };
+  repos.requestRepos(repoView.index);
   module.repoView = repoView;
 })(window);

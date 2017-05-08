@@ -9,7 +9,7 @@
 
     $.get('/github/user/repos')
     .then(data => repos.all = data, err => console.error(err))
-    .then(callback);
+    .then(callback(repos));
   };
 
 
