@@ -4,6 +4,7 @@
   const repoView = {};
 
 
+
   repoView.repoToDom = (render) => {
     var render = Handlebars.compile($('#repoTemplate').text());
     return render;
@@ -11,6 +12,7 @@
 
   repoView.index = function(repos) {
 
+    $('.removeRepos').remove();
     $('#reposUl').append(
       repos.with('name').map(repoView.repoToDom(repos))
     );
