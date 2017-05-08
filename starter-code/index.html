@@ -66,6 +66,19 @@
   <script id="musicTemplate" type="text/x-handlebars-template">
     <iframe width="100%" height="100" scrolling="no" frameborder="no" src="{{source}}"></iframe>
   </script>
+
+  <script id = "repoTemplate" type="text/x-handlebars-template">
+    <li>
+      <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+      <p class="ap">Description: {{description}}</p>
+      <p class="ap">Language: {{language}}</p>
+      <p class="ap">Created: {{created_at}}</p>
+      <p class="ap">Last updated: {{updated_at}}</p>
+      {{#if watchers_count}}
+        <p class="ap">{{watchers_count}} watching this repo.</p>
+      {{/if}}
+    </li>
+  </script>
 </head>
 <body>
   <section class="wrapper">
@@ -82,6 +95,8 @@
         <li class="navlink tab third" style="visibility: hidden" data-content="myProjects"><a href="/projects" class="navtext"><i class="fa fa-home icons" aria-hidden="true"></i>My Projects</a></li>
 
         <li class="navlink tab third" style="visibility: hidden" data-content="myMusic"><a href="/music" class="navtext"><i class="fa fa-music icons" aria-hidden="true"></i>My Music</a></li>
+
+        <li class="navlink tab third" style="visibility: hidden" data-content="myRepos"><a href="/repos" class="navtext"><i class="fa fa-github-square icons" aria-hidden="true"></i>Github Repos</a></li>
 
         <li class="navlink third" style="visibility: hidden"><span class=""></span><a href="https://github.com/Jamesbillard12" target="_blank"  class="navtext"><i class="fa fa-github icons" aria-hidden="true"></i>GitHub</a></li>
 
@@ -147,6 +162,13 @@
 
     </section>
 
+    <section class="repos tab-content" id="myRepos">
+
+      <h1 class="resTitle">My Repos:</h1>
+      <section class="aboutmain">
+          <ul id="repos"></ul>
+      </section>
+
 
   </main>
 
@@ -175,10 +197,16 @@
 
 <script src="/js/jqueryanimate.js" charset="utf-8"></script>
 
+<script src="/js/githubToken.js" charset="utf-8"></script>
+
 <script src="/js/controllers/projectController.js"></script>
+<script src="/js/controllers/reposController.js"></script>
 <script src="/js/controllers/aboutController.js"></script>
 <script src="/js/controllers/musicController.js"></script>
 <script src="/js/controllers/routes.js" charset="utf-8"></script>
+
+<script src="/js/repo.js" charset="utf-8"></script>
+<script src="/js/repoView.js" charset="utf-8"></script>
 
 
 </body>
