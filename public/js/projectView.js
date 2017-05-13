@@ -19,13 +19,10 @@ view.handleCategoryFilter = function() {
       console.log('happening');
       $('section.pbox').fadeOut('slow');
       $('section[data-category="' + $(this).val() + '"]').delay(800).fadeIn('slow');
-      var $newArticle = ($(this).val());
-      console.log($newArticle);
     } else {
       $('section.pbox').fadeIn();
       $('article.template').hide();
     }
-    $('#author-filter').val('');
   });
 };
 module.view = view;

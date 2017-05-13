@@ -20,8 +20,8 @@
         $('section.abox').hide('pulsate', {duration: 1000});
         $('section[data-category="' + $(this).val() + '"]').animate({opacity:1}).delay(655).slideDown('slow');
         $('section[data-category="' + $(this).val() + '"]').effect( "bounce" );
-        var $newArticle = ($(this).val());
-        console.log($newArticle);
+        // var $newArticle = ($(this).val());
+        // console.log($newArticle);
       } else {
         $('section.abox').animate({opacity:1}).delay(200).slideDown('slow');
         $('article.template').hide();
