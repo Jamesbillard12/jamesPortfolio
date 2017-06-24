@@ -12,7 +12,6 @@
     .then(callback(repos));
   };
 
-
   repos.with = attr => repos.all.filter(repo => repo[attr]);
 
   module.repos = repos;
