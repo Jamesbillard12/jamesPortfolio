@@ -32,6 +32,14 @@
     "publishedOn": "2017-11-03",
     "category": "201",
     "description": "This was my project week group assignment."
+  },
+
+  {
+    "name": "Love at First Swipe",
+    "url": "https://loveatfirstswipe.herokuapp.com",
+    "publishedOn": "2017-05-21",
+    "category": "301",
+    "description": "This was my project week group assignment in 301."
   }
 
 ]
